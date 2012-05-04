@@ -1,0 +1,45 @@
+/*
+media queries don't work in older browsers (< IE9)
+So a default is passed into the IIFE to be used as default range when no mediaQueries or :after are available
+*/
+
+/* some basic styling */
+html,body{padding:0;margin:0}
+html{height:100%}
+body{min-height:100%;font:normal 12px/16px Verdana,sans-serif;padding:10px}
+
+
+/* make the images respond to the size of their container */
+img{
+    max-width:100%;
+}
+
+
+html:after{
+    display: none;
+}
+@media screen and (min-width:0px) {
+    html:after{
+        content: "tiny";
+    }
+}
+@media screen and (min-width:320px) {
+    html:after{
+        content: "small";
+    }
+}
+@media screen and (min-width:480px) {
+    html:after{
+        content: "medium";
+    }
+}
+@media screen and (min-width:640px) {
+    html:after{
+        content: "big";
+    }
+}
+@media screen and (min-width:960px) {
+    html:after{
+        content: "huge";
+    }
+}​
