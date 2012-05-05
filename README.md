@@ -4,7 +4,7 @@ srcSwitcher
 A small piece of JavaScript which switches the src attribute of targeted img elements on the current page based on ranges defined in CSS media queries.
 Save precious HTTP request and only download the image you need at a specific device dimension.
 
-[Demo][http://pm5544.eu/srcSwitcher/ "see the demo page"]
+[Demo](http://pm5544.eu/srcSwitcher/ "see the demo page")
 
 In the current landscape of devices, that are able to view webpages, there's a lot of different screen sizes.
 This means that you want to send the right size to the right device, especially when you think of smart-phones which use 3G or other sub-optimal connections.
@@ -24,7 +24,7 @@ In CSS you specify ranges with media queries to let the page react to the differ
 So the decision, as to which range is relevant at a certain size, is done in CSS where all that logic already exists, and is more easily maintained, so you don't have to repeat CSS breakpoints in JavaScript.
 This script just reacts to the information that is providede by CSS, also eliminating the possibility that JavaScript and CSS give conflicting information about the current screen size and therefor all parts of the same page will react on the same time.
 
-The way it listens to changes in CSS is based on [@adactio's "Conditional CSS" post][http://adactio.com/journal/5429/ "check out his post"] in which he explains the why and how.
+The way it listens to changes in CSS is based on [@adactio's "Conditional CSS" post](http://adactio.com/journal/5429/ "check out his post") in which he explains the why and how.
 
 # Using this
 * Make (or generate) different size images and put them in the same folder reachable to the page and give them a suffix indicating the size, like myImage_small.jpg or myImage_huge.jpg
