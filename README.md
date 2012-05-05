@@ -40,7 +40,7 @@ The way it listens to changes in CSS is based on [@adactio's "Conditional CSS" p
 * In CSS define ranges (like i did in the css.css file) or add the html:before{ content: "somerange" } to you current media queries and make sure they match the size indication you used when making the images
 * Put the script at the bottom of the page (at least after the last img element)
 
-When you add images to the page after the script is run you can call the function srcSwitch to reinitialize and also take the new images into account.
+When you add images to the page after the script is run you can call the function srcSwitcher to reinitialize and also take the new images into account.
 
 This script uses a default range when media queries or window.getComputedStyle() are not supported (roughly the same set of browsers).
 This means that IE8 and earlier just download the images for the default range and do not switch when the browser is resized.
