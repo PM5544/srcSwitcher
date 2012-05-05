@@ -6,6 +6,14 @@ Save precious HTTP request and only download the image you need at a specific de
 
 [Demo](http://pm5544.eu/srcSwitcher/ "see the demo page")
 
+Tested on:
+* IE 6, 7, 8 (works with default range fallback)
+* IE 9
+* Chrome
+* FireFox
+* Safari
+* Opera
+
 In the current landscape of devices, that are able to view webpages, there's a lot of different screen sizes.
 This means that you want to send the right size to the right device, especially when you think of smart-phones which use 3G or other sub-optimal connections.
 
@@ -20,9 +28,9 @@ This has a couple of advantages:
 The downside to this approach is that no images are shown when JavaScript is turned off, so YMMV.
 To counter this you could put img elements inside a noscript.
 
-In CSS you specify ranges with media queries to let the page react to the differences in screen sizes.
+In CSS ranges are specified with media queries to let the page react to the differences in screen sizes.
 So the decision, as to which range is relevant at a certain size, is done in CSS where all that logic already exists, and is more easily maintained, so you don't have to repeat CSS breakpoints in JavaScript.
-This script just reacts to the information that is providede by CSS, also eliminating the possibility that JavaScript and CSS give conflicting information about the current screen size and therefor all parts of the same page will react on the same time.
+This script just reacts to the information that is providede by CSS, also eliminating the possibility that JavaScript and CSS give conflicting information about the current screen size and therefor all parts of the same page will react on the same time in the same manner.
 
 The way it listens to changes in CSS is based on [@adactio's "Conditional CSS" post](http://adactio.com/journal/5429/ "check out his post") in which he explains the why and how.
 
