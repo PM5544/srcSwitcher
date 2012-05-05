@@ -116,4 +116,4 @@ var srcSwitcher = ( function( defaultRange, undefined ) {
     // this also is called right away to setupImgs initially...
     return setupImgs;
 
-} ( "biggest" ) ) ();
+} ( "huge" ) ) ();
